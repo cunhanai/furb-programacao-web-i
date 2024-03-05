@@ -1,0 +1,5 @@
+Programação Web I
+
+Professor: Marcos R. Cardoso
+
+Nota final: media_exercicios * 0.3 + media_avaliacoes * 0.7
