@@ -4,7 +4,6 @@
 body {
   position: relative;
   font-family: 'Poppins', sans-serif;
-  margin: 2rem;
   background-color: aliceblue;
   display: flex;
   flex-direction: column;
@@ -18,15 +17,21 @@ header {
   margin: 5rem;
 }
 
+.content {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
 main {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  width: 550px;
 }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 h2 {
@@ -35,7 +40,12 @@ h2 {
 
 h3 {
   margin-left: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .card {
@@ -119,4 +129,23 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 1rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
 }

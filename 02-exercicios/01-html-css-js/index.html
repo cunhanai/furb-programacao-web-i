@@ -19,75 +19,82 @@
   <body>
     <header>
       <h1>Exercício 1 - HTML | CSS | JS</h1>
-      <h6 class="author">Ana Júlia da Cunha</h6>
+      <h4 class="author">Ana Júlia da Cunha</h4>
     </header>
-    <main>
-      <h2>Calculadora básica</h2>
-      <div class="card calculadora">
-        <div class="input-number">
-          <input
-            type="number"
-            name="numero1"
-            placeholder="Informe o primeiro número"
-            autofocus
-            required
-          />
-          <p
-            class="invalid hidden"
-            id="invalid-primeiro"
-          >
-            * Por favor, informe um valor!
-          </p>
-        </div>
-        <div class="input-number">
-          <input
-            type="number"
-            name="numero2"
-            placeholder="Informe o segundo número"
-            autofocus
-            required
-          />
-          <p
-            class="invalid hidden"
-            id="invalid-segundo"
-          >
-            * Por favor, informe um valor!
-          </p>
-        </div>
-
-        <div class="button-area">
-          <button
-            id="somar"
-            onclick="somar()"
-          >
-            Somar
-          </button>
-          <button
-            id="verificarMaior"
-            onclick="verificarMaior()"
-          >
-            Verificar maior número
-          </button>
-        </div>
-      </div>
-      <div class="resultado">
-        <h3>Resultados</h3>
-        <div class="resultado__cards">
-          <div class="card">
-            <p class="label">Soma</p>
-            <p id="resuldadoSoma">Realize uma ação</p>
+    <div class="content">
+      <main>
+        <h2>Calculadora básica</h2>
+        <div class="card calculadora">
+          <div class="input-number">
+            <input
+              type="number"
+              name="numero1"
+              placeholder="Informe o primeiro número"
+              autofocus
+              required
+            />
+            <p
+              class="invalid hidden"
+              id="invalid-primeiro"
+            >
+              * Por favor, informe um valor!
+            </p>
+          </div>
+          <div class="input-number">
+            <input
+              type="number"
+              name="numero2"
+              placeholder="Informe o segundo número"
+              autofocus
+              required
+            />
+            <p
+              class="invalid hidden"
+              id="invalid-segundo"
+            >
+              * Por favor, informe um valor!
+            </p>
           </div>
 
-          <div
-            class="card"
-            id="resultado-maior-numero"
-          >
-            <p class="label">Maior número</p>
-            <p id="resultado-maior-numero__text">Realize uma ação</p>
+          <div class="button-area">
+            <button
+              id="somar"
+              onclick="somar()"
+            >
+              Somar
+            </button>
+            <button
+              id="verificarMaior"
+              onclick="verificarMaior()"
+            >
+              Verificar maior número
+            </button>
           </div>
         </div>
-      </div>
-    </main>
+        <div class="resultado">
+          <h3>Resultados</h3>
+          <div class="resultado__cards">
+            <div class="card">
+              <p class="label">Soma</p>
+              <p id="resuldadoSoma">Realize uma ação</p>
+            </div>
+
+            <div
+              class="card"
+              id="resultado-maior-numero"
+            >
+              <p class="label">Maior número</p>
+              <p id="resultado-maior-numero__text">Realize uma ação</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="links">
+          <a href="#">Próxima página ></a>
+        </div>
+      </footer>
+    </div>
     <script src="js/lib.js"></script>
   </body>
 </html>
