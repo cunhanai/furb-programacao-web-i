@@ -5,6 +5,7 @@ function somar() {
 
   if (verificarValor(numero1, numero2)) {
     resultado.innerText = numero1 + numero2
+    resultado.classList.remove('text-default')
   }
 }
 
@@ -20,16 +21,19 @@ function verificarMaior() {
       resultadoBox.classList.remove('green')
       resultadoBox.classList.remove('yellow')
       resultadoBox.classList.add('red')
+      resultadoText.classList.remove('text-default')
     } else if (numero2 > numero1) {
       resultadoText.innerText = 'Segundo número é maior.'
       resultadoBox.classList.remove('yellow')
       resultadoBox.classList.remove('red')
       resultadoBox.classList.add('green')
+      resultadoText.classList.remove('text-default')
     } else {
       resultadoText.innerText = 'Ambos são iguais.'
       resultadoBox.classList.remove('red')
       resultadoBox.classList.remove('green')
       resultadoBox.classList.add('yellow')
+      resultadoText.classList.remove('text-default')
     }
   }
 }
@@ -59,3 +63,18 @@ function resetResult() {
   document.getElementById('resultado-maior-numero__text').innerText =
     'Realize uma ação'
 }
+
+document.addEventListener('input', () => {
+  let soma = document.getElementById('resuldadoSoma')
+  let numeroMaior = document.getElementById('resultado-maior-numero__text')
+  let box = document.getElementById('resultado-maior-numero')
+
+  soma.innerText = 'Realize uma ação'
+  soma.classList.add('text-default')
+
+  numeroMaior.innerText = 'Realize uma ação'
+  numeroMaior.classList.add('text-default')
+  box.classList.remove('red')
+  box.classList.remove('green')
+  box.classList.remove('yellow')
+})

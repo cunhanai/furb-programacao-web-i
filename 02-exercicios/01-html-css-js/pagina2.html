@@ -12,9 +12,9 @@
       href="css/style.css"
     />
 
-    <script src="js/lib1.js"></script>
+    <script src="js/lib2.js"></script>
 
-    <title>Exercício 1 - HTML/CSS/JS - Calculadora</title>
+    <title>Exercício 1 - HTML/CSS/JS - Texto e tamanho</title>
   </head>
   <body>
     <header>
@@ -23,34 +23,20 @@
     </header>
     <div class="content">
       <main>
-        <h2>Calculadora básica</h2>
-        <div class="card calculadora">
+        <h2>Texto e tamanho</h2>
+        <div class="card">
           <div class="input-number">
             <input
-              type="number"
-              name="numero1"
-              placeholder="Informe o primeiro número"
+              type="text"
+              name="texto"
+              id="texto"
+              placeholder="Informe um texto"
               autofocus
               required
             />
             <p
               class="invalid hidden"
-              id="invalid-primeiro"
-            >
-              * Por favor, informe um valor!
-            </p>
-          </div>
-          <div class="input-number">
-            <input
-              type="number"
-              name="numero2"
-              placeholder="Informe o segundo número"
-              autofocus
-              required
-            />
-            <p
-              class="invalid hidden"
-              id="invalid-segundo"
+              id="invalid"
             >
               * Por favor, informe um valor!
             </p>
@@ -58,16 +44,10 @@
 
           <div class="button-area">
             <button
-              id="somar"
-              onclick="somar()"
+              id="setTamanho"
+              onclick="setTamanho()"
             >
-              Somar
-            </button>
-            <button
-              id="verificarMaior"
-              onclick="verificarMaior()"
-            >
-              Verificar maior número
+              Tamanho
             </button>
           </div>
         </div>
@@ -75,25 +55,22 @@
           <h3>Resultados</h3>
           <div class="resultado__cards">
             <div class="card card-duplo">
-              <p class="label">Soma</p>
+              <p class="label">Conteúdo</p>
               <p
                 class="text-default"
-                id="resuldadoSoma"
+                id="conteudo"
               >
-                Realize uma ação
+                Escreva um texto
               </p>
             </div>
 
-            <div
-              class="card card-duplo"
-              id="resultado-maior-numero"
-            >
-              <p class="label">Maior número</p>
+            <div class="card card-duplo">
+              <p class="label">O tamanho atual do campo é de:</p>
               <p
                 class="text-default"
-                id="resultado-maior-numero__text"
+                id="tamanho"
               >
-                Realize uma ação
+                Aperte o botão para ver o tamanho
               </p>
             </div>
           </div>
@@ -101,6 +78,9 @@
       </main>
       <footer>
         <div class="links">
+          <div class="links__anterior">
+            <a href="index.html">&lt; Anterior</a>
+          </div>
           <div class="links__proximo">
             <a href="pagina2.html">Próximo &gt;</a>
           </div>
