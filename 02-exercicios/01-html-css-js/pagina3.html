@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+
+    <script src="js/lib3.js"></script>
+
+    <title>Exercício 1 - HTML/CSS/JS - Quantidade de elementos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Exercício 1 - HTML | CSS | JS</h1>
+      <h4 class="author">Ana Júlia da Cunha</h4>
+    </header>
+    <div class="content">
+      <main>
+        <h2>Quantidade de elementos</h2>
+        <div class="card">
+          <div class="card__tabela">
+            <table id="tabela">
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <div class="button-area">
+            <button
+              id="novaLinha"
+              onclick="adicionarLinha()"
+            >
+              Adicionar nova linha
+            </button>
+            <button
+              id="getQtdElementos"
+              onclick="getElements()"
+            >
+              Contar
+            </button>
+          </div>
+        </div>
+        <div class="resultado">
+          <h3>Resultados</h3>
+          <div class="resultado__cards">
+            <div class="card">
+              <div class="card__elementos">
+                <p class="label">Quantidade de elementos</p>
+                <p
+                  id="qtdElementos-default"
+                  class="text-default"
+                >
+                  Pressione "Contar" para ver o resultado
+                </p>
+                <p
+                  class="hidden text-default"
+                  id="qtdElementos"
+                ></p>
+              </div>
+              <div class="card__elementos">
+                <p class="label">Elementos da tela</p>
+                <p
+                  class="text-default"
+                  id="elementos-message"
+                >
+                  Pressione "Contar" para ver o resultado
+                </p>
+                <ol
+                  class="hidden text-default"
+                  id="lista-elementos"
+                ></ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="links">
+          <div class="links__anterior">
+            <a href="pagina2.html">&lt; Anterior</a>
+          </div>
+          <div class="links__proximo">
+            <a href="#">Próximo &gt;</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

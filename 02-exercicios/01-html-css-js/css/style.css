@@ -169,3 +169,37 @@ a:active {
 .text-default {
   color: gray;
 }
+
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+  border-spacing: 1rem;
+  width: 100%;
+}
+
+td {
+  border: solid 2.25px rgb(198, 212, 228);
+  text-align: center;
+  vertical-align: middle;
+  width: calc(100% / 3);
+  height: 3rem;
+}
+
+.card__elementos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+ol li {
+  height: 1.5rem;
+}
+
+ol li span {
+  padding-left: 0.5rem;
+}
