@@ -1,5 +1,5 @@
 function getElements() {
-  var elementos = [...document.getElementsByTagName('*')]
+  let elementos = [...document.getElementsByTagName('*')]
 
   document.getElementById('elementos-message').classList.add('hidden')
   document.getElementById('qtdElementos-default').classList.add('hidden')
@@ -39,7 +39,17 @@ function adicionarLinha() {
     let tabela = document.getElementById('tabela')
     tabela.appendChild(novaLinha)
 
+    document.getElementById('qtdElementos-default').classList.remove('hidden')
     document.getElementById('elementos-message').classList.remove('hidden')
-    document.getElementById('lista-elementos').classList.add('hidden')
+    document.getElementById('qtdElementos').classList.add('hidden')
+
+    let lista = document.getElementById('lista-elementos')
+    lista.classList.add('hidden')
+
+    let listaElementos = document.querySelectorAll('#lista-elementos > li')
+
+    for (let listaEl of listaElementos) {
+      lista.removeChild(listaEl)
+    }
   }
 }
