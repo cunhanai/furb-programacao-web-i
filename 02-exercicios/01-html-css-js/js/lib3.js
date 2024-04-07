@@ -9,7 +9,7 @@ function getElements() {
 
   qtdElementos.innerText = `${elementos.length} ${
     elementos.length > 1 && elementos.length !== 0 ? 'elementos' : 'elemento'
-  }`
+  } (sem a nova lista)`
 
   for (let elemento of elementos) {
     let novoElemento = document.createElement('li')
